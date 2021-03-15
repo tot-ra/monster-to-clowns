@@ -1,0 +1,314 @@
+body {
+	overflow:                    hidden;
+	padding:                     0;
+	margin:                      0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	background-color:            black;
+	/*background-color:            #313c6f;*/
+}
+
+video {
+	display:  none;
+	position: absolute;
+	z-index:  100;
+	width:    100%;
+	height:   100%;
+}
+
+.scene {
+	width:   1024px;
+	/*height:  650px;*/
+	height:  768px;
+	top:     0;
+	left:    0;
+	display: none;
+}
+
+.scene.active {
+	display: block;
+}
+
+.ani {
+	/* TRANSITION */
+	-webkit-transition: background 0.05s;
+	-moz-transition:    background 0.05s;
+	-o-transition:      background 0.05s;
+	transition:         background 0.05s;
+}
+
+#scene0 {
+	background-image: url('res/scene0/room.png');
+}
+
+#scene0 #logo {
+	background-image: url('res/scene0/logo.png');
+	width:            100%;
+	height:           100%;
+	top:              -100px;
+}
+
+#scene0 #start {
+	background-image: url('res/scene0/start.png');
+	width:            400px;
+	height:           200px;
+	top:              420px;
+	left:             330px;
+}
+
+#scene0 #skip {
+	background-image: url('res/scene0/skip.png');
+	width:            500px;
+	height:           300px;
+	top:              520px;
+	left:             210px;
+}
+
+#scene0 #menu_rain {
+	width:  100%;
+	height: 100%;
+}
+
+#scene2 {
+	background-image: url('res/scene2/room.png');
+}
+
+#scene3 {
+	background-image: url('res/scene3/monster.1.png');
+}
+
+#scene4 {
+	background-image:  url('res/scene4/room.png');
+	background-repeat: repeat;
+}
+
+#scene5 {
+	background-image: url('res/scene5/room.png');
+}
+
+div {
+	position:          absolute;
+	background-repeat: no-repeat;
+	/*background-color: red;*/
+	/*top:              40%;* /
+	/*left:             40%;*/
+	cursor:            pointer;
+	overflow:          hidden;
+
+	width:             50%;
+	height:            50%;;
+}
+
+.clicky {
+	cursor: hand;
+}
+
+#girl {
+	top:    364px;
+	left:   520px;
+	width:  176px;
+	height: 300px;
+}
+
+#closet {
+	background-image: url('res/scene2/closet.png');
+
+	top:              200px;
+	left:             26px;
+	width:            328px;
+	height:           441px;
+}
+
+#closet.open {
+	background-image: url('res/scene2/closet.open.png');
+}
+
+#shelf {
+	background-image: url('res/scene2/shelf.png');
+	/*background-position: 0 10px;*/
+
+	width:            190px;
+	height:           200px;
+	left:             500px;
+	top:              184px;
+}
+
+#shelf.open {
+	background-image: url('res/scene2/shelf.open.png');
+	/*left:             529px;*/
+}
+
+#chest {
+	background-image: url('res/scene2/chest.png');
+	width:            262px;
+	height:           243px;
+	left:             750px;
+	top:              530px;
+}
+
+#chest.open {
+	background-image: url('res/scene2/chest.open.png');
+}
+
+#sky {
+	height:              207px;
+	width:               200px;
+	left:                690px;
+	top:                 167px;
+	background-image:    url('res/scene2/sky.png');
+	background-position: -100px -100px;
+	z-index:             -3;
+}
+
+#monster {
+	background-image: url('res/scene2/monster.png');
+	height:           291px;
+	width:            186px;
+	left:             708px;
+	top:              186px;
+	z-index:          -2;
+}
+
+#curtains {
+	background-image: url('res/scene2/curtains.png');
+	height:           272px;
+	width:            298px;
+	left:             660px;
+	top:              150px;
+}
+
+#curtains.open {
+	background-image: url('res/scene2/curtains.open.png');
+}
+
+#rain {
+	left:                679px;
+	top:                 150px;
+
+	background-position: -80px -60px;
+	z-index:             -1;
+	width:               500px;
+	height:              406px;
+}
+
+/* scene 4*/
+
+#girl4 {
+	background-image:    url('res/scene4/girl.gif');
+	width:               290px;
+	height:              380px;
+	background-position: -80px -80px;
+
+	/* TRANSITION */
+	-webkit-transition:  top 0.1s;
+	-moz-transition:     top 0.1s;
+	-o-transition:       top 0.1s;
+	transition:          top 0.1s;
+}
+
+.star1 {
+	background-image:    url('res/scene4/star1.1.png');
+	background-position: -165px -160px;
+	width:               160px;
+	height:              160px;
+	z-index:             4;
+}
+
+.star2 {
+	background-image: url('res/scene4/star2.1.png');
+}
+
+.star3 {
+	background-image: url('res/scene4/star3.1.png');
+}
+
+#fearbar {
+	background-image: url('res/scene4/fearbar_border.png');
+
+	width:            456px;
+	height:           185px;
+}
+
+#fearbar_bg {
+	background-image: url('res/scene4/fearbar_bg.png');
+	top:              10px;
+	left:             550px;
+	z-index:          2;
+}
+
+#fearbar_level {
+	background-image: url('res/scene4/fearbar_level.png');
+	width:            35px;
+	height:           140px;
+	z-index:          3;
+	top:              40px;
+	left:             760px;
+}
+
+/* scene 5 */
+
+#book {
+	background-image: url('res/scene5/book.png');
+	width:            307px;
+	height:           171px;
+	left:             19px;
+	top:              399px;
+}
+
+#book.open {
+	background-image: url('res/scene5/book.open.png');
+}
+
+#tv {
+	background-image: url('res/scene5/tv.png');
+	width:            293px;
+	height:           416px;
+	left:             0;
+	top:              0;
+}
+
+#tv.open {
+	background-image: url('res/scene5/tv.open.png');
+}
+
+#parent {
+	background-image: url('res/scene5/parent.png');
+	width:            238px;
+	height:           243px;
+	left:             700px;
+	top:              500px;
+}
+
+#parent.open {
+	background-image: url('res/scene5/parent.open.png');
+}
+
+#plant {
+	background-image: url('res/scene5/plant.png');
+	width:            392px;
+	height:           608px;
+	left:             626px;
+	top:              41px;
+}
+
+#plant.open {
+	background-image: url('res/scene5/plant.open.png');
+}
+
+#bag {
+	background-image: url('res/scene5/bag.png');
+	width:            166px;
+	height:           177px;
+	left:             380px;
+	top:              410px;
+}
+
+#bag.open {
+	background-image: url('res/scene5/bag.open.png');
+}
+
+#scene5 #girl2 {
+	left: 540px;
+	top:  400px;
+	width: 217px;
+	height: 302px;
+}
